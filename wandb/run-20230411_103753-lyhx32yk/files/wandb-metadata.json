@@ -1,0 +1,385 @@
+{
+    "os": "Linux-4.15.0-196-generic-x86_64-with-glibc2.17",
+    "python": "3.8.16",
+    "heartbeatAt": "2023-04-11T01:37:54.733395",
+    "startedAt": "2023-04-11T01:37:53.399545",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "-f",
+        "exps/example/custom/yolox_nano_lpr_rect.py",
+        "-d",
+        "1",
+        "-b",
+        "128",
+        "--fp16",
+        "-o",
+        "-c",
+        "yolox_nano.pth",
+        "--cache",
+        "--logger",
+        "wandb",
+        "wandb-project",
+        "lpr"
+    ],
+    "state": "running",
+    "program": "tools/train.py",
+    "codePath": "tools/train.py",
+    "git": {
+        "remote": "https://github.com/myungsanglee/YOLOX.git",
+        "commit": "bb9185c095dfd7a8015a1b82f3e9a065090860b8"
+    },
+    "email": "lee0577@naver.com",
+    "root": "/home/fssv2/myungsang/my_projects/YOLOX",
+    "host": "fssv2-PowerEdge-T640",
+    "username": "fssv2",
+    "executable": "/home/fssv2/anaconda3/envs/michael/bin/python",
+    "cpu_count": 32,
+    "cpu_count_logical": 64,
+    "cpu_freq": {
+        "current": 1011.494140625,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1000.899,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.203,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.468,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.541,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.585,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.143,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.386,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.562,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.743,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.511,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.303,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.582,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.528,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.539,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.64,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.45,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.698,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.553,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1118.524,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.469,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.44,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1002.006,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.482,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.974,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1001.078,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.095,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.461,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.386,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.356,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.708,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.524,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.597,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.455,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.924,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.185,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.414,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.695,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.447,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.42,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.666,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.414,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.712,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.605,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.216,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.439,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.575,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.61,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.738,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.706,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.577,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1564.495,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.17,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.528,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 999.157,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.404,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.5,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.563,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.427,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.764,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.454,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.531,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.587,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.53,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1000.556,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 3518.6582107543945,
+        "used": 3118.2297592163086
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 125.53353881835938
+    }
+}
