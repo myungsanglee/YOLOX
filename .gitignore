@@ -4,6 +4,7 @@
 # user experiments directory
 YOLOX_outputs/
 datasets/
+wandb/
 # do not ignore datasets under yolox/data
 !*yolox/data/datasets/
 
@@ -226,5 +227,3 @@ events.out.tfevents*
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-wandb/
