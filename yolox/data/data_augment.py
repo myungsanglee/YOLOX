@@ -157,7 +157,8 @@ def preproc(img, input_size, swap=(2, 0, 1)):
     padded_img = np.ascontiguousarray(padded_img, dtype=np.float32)
     return padded_img, r
 
-
+tmp_num = 0
+import os
 class TrainTransform:
     def __init__(self, max_labels=50, flip_prob=0.5, hsv_prob=1.0):
         self.max_labels = max_labels
@@ -207,6 +208,17 @@ class TrainTransform:
             : self.max_labels
         ]
         padded_labels = np.ascontiguousarray(padded_labels, dtype=np.float32)
+        
+        global tmp_num
+        if tmp_num < 10:
+            tmp_img = image_t.copy()
+            tmp_img = tmp_img.transpose((1, 2, 0))
+            tmp_img = np.ascontiguousarray(tmp_img, dtype=np.uint8)
+            
+            tmp_num += 1
+            save_path = os.path.join('/home/fssv2/myungsang/my_projects/YOLOX/tmp', f"img_{tmp_num:02d}.jpg")
+            cv2.imwrite(save_path, tmp_img)
+        
         return image_t, padded_labels
 
 

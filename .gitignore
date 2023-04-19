@@ -5,6 +5,7 @@
 YOLOX_outputs/
 datasets/
 wandb/
+tmp/
 # do not ignore datasets under yolox/data
 !*yolox/data/datasets/
 
