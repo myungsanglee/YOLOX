@@ -236,6 +236,11 @@ class Predictor(object):
         crop_img_height = ymax - ymin
         
         img = img[ymin:ymax, xmin:xmax].copy()
+        
+        gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        img[:,:,0] = gray_img
+        img[:,:,1] = gray_img
+        img[:,:,2] = gray_img
         ############################################################################################
         
         height, width = img.shape[:2]
