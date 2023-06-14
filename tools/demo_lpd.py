@@ -136,6 +136,12 @@ class Predictor(object):
         if isinstance(img, str):
             img_info["file_name"] = os.path.basename(img)
             img = cv2.imread(img)
+            
+            # gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+            # img[:,:,0] = gray_img
+            # img[:,:,1] = gray_img
+            # img[:,:,2] = gray_img
+            
         else:
             img_info["file_name"] = None
 

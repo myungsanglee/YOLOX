@@ -254,6 +254,9 @@ class CacheDataset(Dataset, metaclass=ABCMeta):
                     cache_path_filename = os.path.join(self.cache_dir, cache_filename)
                     os.makedirs(os.path.dirname(cache_path_filename), exist_ok=True)
                     np.save(cache_path_filename, x)
+                    
+                # print(f'\n\n\nchache x: {x.shape}\n\n')    
+                
                 b += x.nbytes
                 pbar.desc = \
                     f'Caching images ({b / gb:.1f}/{mem_required / gb:.1f}GB {self.cache_type})'

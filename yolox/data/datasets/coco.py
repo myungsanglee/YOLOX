@@ -146,7 +146,10 @@ class COCODataset(CacheDataset):
         img_file = os.path.join(self.data_dir, self.name, file_name)
 
         img = cv2.imread(img_file)
+        # img = cv2.imread(img_file, cv2.IMREAD_GRAYSCALE)
         assert img is not None, f"file named {img_file} not found"
+
+        # print(f'\n\n\nload_image: {img.shape}\n\n')
 
         return img
 
@@ -159,6 +162,10 @@ class COCODataset(CacheDataset):
         label, origin_image_size, _, _ = self.annotations[index]
         img = self.read_img(index)
 
+        # print(f'\n\n\npull_item: {img.shape}')
+        
+        # img = img[..., None]
+        
         return img, copy.deepcopy(label), origin_image_size, np.array([id_])
 
     @CacheDataset.mosaic_getitem

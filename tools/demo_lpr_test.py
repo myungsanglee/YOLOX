@@ -237,10 +237,10 @@ class Predictor(object):
         
         img = img[ymin:ymax, xmin:xmax].copy()
         
-        gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        img[:,:,0] = gray_img
-        img[:,:,1] = gray_img
-        img[:,:,2] = gray_img
+        # gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        # img[:,:,0] = gray_img
+        # img[:,:,1] = gray_img
+        # img[:,:,2] = gray_img
         ############################################################################################
         
         height, width = img.shape[:2]
@@ -322,13 +322,13 @@ def image_demo(predictor, vis_folder, path, current_time, save_result):
         print(f'True: {true_label}, Pred: {plate_num}')
         
         # show image
-        # for detection in detections:
-        #     _, _, x1, y1, x2, y2 = detection
-        #     cv2.rectangle(img, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0))
-        # cv2.imshow('Demo', img)
-        # ch = cv2.waitKey(0)
-        # if ch == 27 or ch == ord("q") or ch == ord("Q"):
-        #     break
+        for detection in detections:
+            _, _, x1, y1, x2, y2 = detection
+            cv2.rectangle(img, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0))
+        cv2.imshow('Demo', img)
+        ch = cv2.waitKey(0)
+        if ch == 27 or ch == ord("q") or ch == ord("Q"):
+            break
         
         # if save_result:
         #     save_folder = os.path.join(

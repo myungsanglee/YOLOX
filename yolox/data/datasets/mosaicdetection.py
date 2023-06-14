@@ -156,6 +156,7 @@ class MosaicDetection(Dataset):
         else:
             self._dataset._input_dim = self.input_dim
             img, label, img_info, img_id = self._dataset.pull_item(idx)
+            # print(f'\n\n\nmosaic: {img.shape}')
             img, label = self.preproc(img, label, self.input_dim)
             return img, label, img_info, img_id
 
